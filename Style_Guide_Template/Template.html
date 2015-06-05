@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+    <h1>Style Guide for MMO website</h1>
+
+
+    <nav>
+      
+      <p>
+        Go to:
+        <a href="#interactive_elements">Interactive Elements</a>,
+        <a href="#text_elements">Text Elements</a>,
+        <a href="#combined_elements">Combined Elements</a>,
+      </p>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button_nav<p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button_nav"&gt;Default Button&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button_nav" href="#">Default Button</a>
+
+      </section>
+
+      <section>
+        <h2>In-text link</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>a </p>
+		
+		<h3>Sample code:</h3>
+        <code>&lt;a href="#"&gt;In-text link&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a href="#">In-text link</a>
+      </section>
+
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+		<h3>CSS selector:</h3>
+		<p>.button_form</p>
+		
+		<h3>Sample code:</h3>
+        <code>&lt;input class="button_form" type="submit" value="Submit/Reset Button"&gt;</code>
+
+        <h3>Rendered element:</h3>
+		<input type="submit" class="button_form" value="Submit/Reset Button">
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+		<h3>CSS selector:</h3>
+        <p>.button_nav<p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;input type="text" name="firstname"&gt; <code>
+
+        <h3>Rendered element:</h3>
+        <input type="text" name ="firstname">
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Headings</h2>
+		<h3>CSS selector:</h3>
+        <p>h1, h2, h3<p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;h1&gt;Header 1&lt;/h1&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <h1>Header 1</h1>
+		<h2>Header 2</h2>
+		<h3>Header 3</h3>
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+		<h3>CSS selector:</h3>
+        <p>p<p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <p> This is a paragraph </p>
+      </section> 
+
+      <section>
+        <h2>Bulleted Lists</h2>
+		<h3>CSS selector:</h3>
+        <p>ul, li<p>
+
+        <h3>Sample code:</h3>
+		<code>&lt;ul&gt;</code>
+        <code>&lt;li&gt;This is a bullet item&lt;/li&gt;</code>
+		<code>&lt;/ul&gt;</code>
+
+        <h3>Rendered element:</h3>
+		<ul>
+			<li> This is a bullet item </li>
+			<li> This is a second bullet item </li>
+		</ul>
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+		<h3>CSS selector:</h3>
+        <p>ol, li<p>
+
+        <h3>Sample code:</h3>
+		<code>&lt;ol&gt;</code>
+        <code>&lt;li&gt;This is a bullet item&lt;/li&gt;</code>
+		<code>&lt;/ol&gt;</code>
+
+        <h3>Rendered element:</h3>
+		<ol>
+			<li> This is a bullet item </li>
+			<li> This is a second bullet item </li>
+		</ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+		<h3>CSS selector:</h3>
+        <p>nav, div, .grid-col-2of8, a, button_nav<p>
+
+        <h3>Sample code:</h3>
+		<code>&lt;nav class="grid"&gt;</code><br>
+        <code>&lt;div class="grid-col-2of8"&gt;<code><br>
+		<code>&lt;a href="#" class="button_nav"&gt;News & Events&lt;/a&gt;</code><br>
+		<code>&lt;/div&gt;</code><br>
+		<code>&lt;/nav&gt;</code>
+
+        <h3>Rendered element:</h3>
+		<nav class="grid">
+			<div class="grid-col-2of8">
+				<a href="#" class="button_nav">News & Events</a>
+			</div>
+			<div class="grid-col-2of8">
+				<a href="#" class="button_nav">Player Guide</a>
+			</div>
+			<div class="grid-col-2of8">
+				<a href="#" class="button_nav">Player Rankings</a>
+			</div>
+			<div class="grid-col-2of8">
+				<a href="#" class="button_nav">Item Shop</a>
+			</div>
+		</nav>
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+		<h3>CSS selector:</h3>
+        <p>img, .listing<p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;img src="http://placehold.it/350x150" alt="Item to be sold" width="350px" height="150"&gt;</code><br>
+		<code>&lt;button class="listing"&gt;Buy&lt;/button&gt;</code><br>
+		<code>&lt;button class="listing"&gt;Details&lt;/button&gt;</code>
+        <h3>Rendered element:</h3>
+		<img src="http://placehold.it/350x150" alt="Item to be sold" width="350px" height="150">
+		<button class="listing">Buy</button>
+		<button class="listing">Details</button>
+
+	 </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+  </body>
+</html>
