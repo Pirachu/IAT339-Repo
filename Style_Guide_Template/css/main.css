@@ -1,0 +1,123 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+}
+
+section h3 {
+  margin-bottom: 0.5em;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.5 0.75em;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button_nav {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #7F00FF;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button_nav:hover, .button_nav:focus {
+  background-color: #333;
+}
+
+/* in-text link */
+a:hover {
+	text-decoration:none;
+}
+
+.button_form {
+  display: inline-block;
+  padding: 0.25em;
+  border-radius: 0.3em;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;
+}
+.button_form:hover, .button_form:focus  {
+	background-color: #999;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+h1 {
+	font-family: 'Press Start 2P', Verdana, Helvetica, sans-serif;
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+h2, h3, p, li {
+	font-family:Verdana, Helvetica, sans-serif;
+}
+
+[class^='grid-col-'] {
+	float: left;
+	padding: 0; 
+	text-align: center; 
+	
+}
+.grid-col-2of8 {
+	width: 25%;
+}
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
+	
+}
+img {
+display:block;
+
+}
+.listing {
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: #FFF;
+  background-color: #7F00FF;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  width: 10%;
+}
+.listing:hover, .listing:focus {
+  background-color: #333;
+}
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
